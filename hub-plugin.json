@@ -1,0 +1,26 @@
+{
+  "name": "prompt-engineer",
+  "kind": "specialist",
+  "version": "0.1.0",
+  "hub": "^1",
+  "icon": "🪄",
+  "description": "Prompt engineer: writes prompts for image and video generation (Midjourney, GPT Image, Nano Banana, Kling, Veo) from an analysis of the object, with no template",
+  "why": "A ready-made prompt engineer instead of building your own: analysis of the object before the prompt, five different material ideas, a lesson from the approved prompt instead of a frame, observations about engines, the visual-prompts skill, check cases",
+  "agent": {
+    "cwd": "~/prompt-engineer",
+    "tools": {
+      "need": [],
+      "optional": [
+        {
+          "id": "gpt-image",
+          "why": "a trial generation of a frame from a prompt"
+        },
+        {
+          "id": "figma",
+          "why": "sources and references from design mockups"
+        }
+      ]
+    },
+    "cases": "evals/cases.md"
+  }
+}
